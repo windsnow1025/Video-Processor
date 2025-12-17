@@ -1,0 +1,9 @@
+[project]
+name = "Media-Processor"
+version = "0.1.0"
+description = "Media Processor"
+readme = "README.md"
+dependencies = [
+    "python-dotenv",
+]
+requires-python = ">=3.12"

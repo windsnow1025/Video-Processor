@@ -1,7 +1,24 @@
 # Video Processor
 
-## Setup
+## Development
+
+### Python uv
+
+1. Install uv: `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+2. Install Python in uv: `uv python install 3.12`; upgrade Python in uv: `uv python install 3.12`
+3. Configure requirements:
+  ```bash
+  uv sync --refresh
+  ```
+
+### Pycharm Professional
+
+1. Add New Interpreter >> Add Local Interpreter
+  - Environment: Select existing
+  - Type: uv
+2. Add New Configuration >> uv run >> script: `main.py`
+
+## Environment
 
 1. Download `ffmpeg-release-essentials`
 2. Copy `./.env.example` and rename it to `./.env`, then fill in the environment variables.
-3. Install requirements: `pip install -r requirements.txt`
