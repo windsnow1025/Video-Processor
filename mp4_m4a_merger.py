@@ -23,6 +23,8 @@ def merge_mp4_m4a(ffmpeg_path):
     mp4_files = sorted(Path("input").glob("*.mp4"))
     m4a_files = sorted(Path("input").glob("*.m4a"))
 
+    Path("output").mkdir(exist_ok=True)
+
     # For each mp4 file
     for mp4_file in mp4_files:
         for m4a_file in m4a_files:
