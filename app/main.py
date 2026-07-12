@@ -2,8 +2,8 @@ import os
 
 from dotenv import load_dotenv
 
-from mp4_m4a_merger import merge_mp4_m4a
-# from mp4_trimmer import trim_mp4_end
+from app.mp4_m4a_merger import merge_mp4_m4a
+# from app.mp4_trimmer import trim_mp4_end
 
 
 def main():
